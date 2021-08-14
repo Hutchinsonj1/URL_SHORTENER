@@ -1,0 +1,7 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<p class="text-left" style="cursor: pointer; margin: 20px; padding: 6px; border-radius: 8px; font-size: 22px; background-color: rgb(154,155,199); max-width: 800px;">
+    Original URL: {{ original_url }}
+</p>
+<p class="text-left" style="cursor: pointer; margin: 20px; padding: 6px; border-radius: 8px; font-size: 22px; background-color: rgb(154,155,199); max-width: 800px;">
+    Short URL: {{ url_for('shortener.redirect_to_url', short_url=new_url, _external=True) }}
+</p>

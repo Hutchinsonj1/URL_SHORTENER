@@ -1,0 +1,4 @@
+{% for link in links %}
+    <p class="text-left" style="cursor: pointer; margin: 20px; padding: 6px; border-radius: 8px; font-size: 22px; background-color: rgb(154,155,199); max-width: 800px;">
+        Original URL: {{ link.original_url }} | Short URL: {{ link.short_url }} | Views: {{ link.views }}
+{% endfor %}

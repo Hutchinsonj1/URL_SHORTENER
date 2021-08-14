@@ -1,0 +1,10 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<form method="POST" action="{{ url_for('shortener.create_link') }}" style="max-width: 800px; margin: 50px;">
+    <div class="form-group">
+        <label for="original-url" style="font-size: 28px;">
+            Original URL
+        </label>  
+        <input type="text" class="form-control" placeholder="Enter URL" name="original_url" />
+    </div>
+    <button type="submit" class="btn btn-primay" style="background-color: hsl(240, 100%, 50%); color: white;">Submit</button>
+</form>
